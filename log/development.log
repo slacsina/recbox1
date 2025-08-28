@@ -1,0 +1,46 @@
+Started GET "/" for 127.0.0.1 at 2025-08-28 08:46:40 +0000
+  [1m[35m (5.7ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY) /*application='Recbox1'*/[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL) /*application='Recbox1'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Recbox1'*/[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/student/.rbenv/versions/3.4.5/lib/ruby/gems/3.4.0/gems/railties-8.0.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/student/.rbenv/versions/3.4.5/lib/ruby/gems/3.4.0/gems/railties-8.0.2.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.0ms | GC: 0.0ms)
+Completed 200 OK in 67ms (Views: 8.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-08-28 08:53:14 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Recbox1'*/[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.5ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 13.3ms | GC: 1.3ms)
+Completed 200 OK in 205ms (Views: 16.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 3.3ms)
+
+
+Started GET "/assets/application-8b441ae0.css" for 127.0.0.1 at 2025-08-28 08:53:14 +0000
+Started GET "/assets/application-bfcdf840.js" for 127.0.0.1 at 2025-08-28 08:53:14 +0000
+Started GET "/assets/turbo.min-3a2e143f.js" for 127.0.0.1 at 2025-08-28 08:53:14 +0000
+Started GET "/assets/controllers/hello_controller-708796bd.js" for 127.0.0.1 at 2025-08-28 08:53:14 +0000
+Started GET "/assets/controllers/index-ee64e1f1.js" for 127.0.0.1 at 2025-08-28 08:53:14 +0000
+Started GET "/assets/stimulus.min-4b1e420e.js" for 127.0.0.1 at 2025-08-28 08:53:14 +0000
+Started GET "/assets/stimulus-loading-1fc53fe7.js" for 127.0.0.1 at 2025-08-28 08:53:14 +0000
+Started GET "/assets/controllers/application-3affb389.js" for 127.0.0.1 at 2025-08-28 08:53:14 +0000
+Started GET "/" for 127.0.0.1 at 2025-08-28 09:00:37 +0000
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 11.8ms | GC: 0.0ms)
+Completed 200 OK in 23ms (Views: 13.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2025-08-28 09:00:46 +0000
+Processing by AboutController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (Duration: 0.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.9ms | GC: 0.0ms)
+Completed 200 OK in 17ms (Views: 2.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
