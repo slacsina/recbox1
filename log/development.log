@@ -90,3 +90,1101 @@ FOREIGN KEY ("ingredient_id")
   [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20250906124056') RETURNING "version" /*application='Recbox1'*/[0m
   [1m[36mTRANSACTION (10.3ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
   [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mUser Create (8.0ms)[0m  [1m[32mINSERT INTO "users" ("fname", "lname", "email", "password_digest", "is_admin", "status", "created_at", "updated_at") VALUES ('Jay', 'Cutler', 'jcutler@recipebox.com', '$2a$12$jgeOpXfg2IBXNfeZjezwm.vrzG5kE/1NJenkCC.u33LjpUDgHbcSC', 1, 'Active', '2025-09-15 06:39:00.364305', '2025-09-15 06:39:00.364305') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (9.4ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("fname", "lname", "email", "password_digest", "is_admin", "status", "created_at", "updated_at") VALUES ('Frank', 'Zane', 'fzane@email.com', '$2a$12$xnK2wjiGq8xoBWV9vuomeuGwXUFAXQvf.Qv5ieXK.ymLNH.Xno9GO', 0, 'Active', '2025-09-15 06:41:12.702071', '2025-09-15 06:41:12.702071') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("fname", "lname", "email", "password_digest", "is_admin", "status", "created_at", "updated_at") VALUES ('John', 'Smith', 'jsmith@email.com', '$2a$12$jpCg2Hwaf/c3gmUQ..gR7.eZlLhygEr0hRd4wEoMWjrvLvXZUi3li', 0, 'Active', '2025-09-15 06:42:50.266454', '2025-09-15 06:42:50.266454') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("fname", "lname", "email", "password_digest", "is_admin", "status", "created_at", "updated_at") VALUES ('John', 'Doe', 'johndoe@email.com', '$2a$12$l.No43NDeQmYbonZEYr2SOEbwLy/NsoD45SoUep6g.CBrKFz4Gdye', 0, 'Active', '2025-09-15 06:42:50.494944', '2025-09-15 06:42:50.494944') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("fname", "lname", "email", "password_digest", "is_admin", "status", "created_at", "updated_at") VALUES ('Jane', 'Doe', 'janedoe@email.com', '$2a$12$7QWRLImcuDYuQLXG2immYuYVoKQutBoS.Hw929JpxsuHtGYLPLBiO', 0, 'Suspended', '2025-09-15 06:42:50.722871', '2025-09-15 06:42:50.722871') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("fname", "lname", "email", "password_digest", "is_admin", "status", "created_at", "updated_at") VALUES ('Bob', 'Smith', 'bobsmith@email.com', '$2a$12$Vr7hrjWtGfEBeWyWyGhTH.NpI/vH4GF7hEcK7qU4PZXGg7IeMIKvy', 0, 'Active', '2025-09-15 06:42:50.951458', '2025-09-15 06:42:50.951458') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("fname", "lname", "email", "password_digest", "is_admin", "status", "created_at", "updated_at") VALUES ('Alice', 'Johnson', 'alicejohnson@email.com', '$2a$12$I0WdBnNc6FL1LxlUfxl2TeUuzlC6QstEWJ5q3xeS9EL2LnozQoTX.', 0, 'Active', '2025-09-15 06:42:51.180330', '2025-09-15 06:42:51.180330') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("fname", "lname", "email", "password_digest", "is_admin", "status", "created_at", "updated_at") VALUES ('Sarah', 'Lee', 'sarahlee@email.com', '$2a$12$PjCevVcETPsCiviqrE5Mlusi33bfZRCsMIeRJPdZUpqvn92.ytxra', 0, 'Active', '2025-09-15 06:42:51.408847', '2025-09-15 06:42:51.408847') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("fname", "lname", "email", "password_digest", "is_admin", "status", "created_at", "updated_at") VALUES ('David', 'Brown', 'davidbrown@email.com', '$2a$12$oox6EZrS1zh6zwiCkJdNKezRoPGPgLhxagxvV4PB6TwFcA38l.jp6', 0, 'Active', '2025-09-15 06:42:51.641750', '2025-09-15 06:42:51.641750') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("fname", "lname", "email", "password_digest", "is_admin", "status", "created_at", "updated_at") VALUES ('Emily', 'Wilson', 'emilywilson@email.com', '$2a$12$5/a4hB7GQcimGGgnCXluhOrfgJnJCnOH7EVYZ.X6amr/Ic8eQzMmq', 0, 'Suspended', '2025-09-15 06:42:51.869430', '2025-09-15 06:42:51.869430') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("fname", "lname", "email", "password_digest", "is_admin", "status", "created_at", "updated_at") VALUES ('Oliver', 'Taylor', 'olivertaylor@email.com', '$2a$12$JunwFzCfSbgD4AkqEMxRNu2O4PjTCjLbVFrzOjQzbubLnVMgJJNOe', 0, 'Active', '2025-09-15 06:42:52.097643', '2025-09-15 06:42:52.097643') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("fname", "lname", "email", "password_digest", "is_admin", "status", "created_at", "updated_at") VALUES ('Grace', 'Anderson', 'graceanderson@email.com', '$2a$12$lc3ZIdNMxmwG4lcFz8dE1.g.DzXp29LnHfGcV7SJpYLKQOb0/r2dK', 0, 'Active', '2025-09-15 06:42:52.331173', '2025-09-15 06:42:52.331173') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("fname", "lname", "email", "password_digest", "is_admin", "status", "created_at", "updated_at") VALUES ('Lucas', 'Scott', 'lucasscott@email.com', '$2a$12$1ysYjqLPwQnzstVK2Eo6jesFMD9GkkSc717Sb1rzf3RRNAtiE2k7S', 0, 'Banned', '2025-09-15 06:42:52.558679', '2025-09-15 06:42:52.558679') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("fname", "lname", "email", "password_digest", "is_admin", "status", "created_at", "updated_at") VALUES ('Larry', 'Bird', 'lbird@email.com', '$2a$12$x4.zyJ9R9g27krMtITqFb.NlbfMvQk7c4e2xpn3.fTbuEz6reI1NW', 0, 'Active', '2025-09-15 06:42:52.787680', '2025-09-15 06:42:52.787680') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" /* loading for pp */ LIMIT 11 /*application='Recbox1'*/[0m
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT "users".* FROM "users" /* loading for pp */ LIMIT 11 /*application='Recbox1'*/[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 6 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."status" = 'Banned' LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."status" = 'Suspended' /* loading for pp */ LIMIT 11 /*application='Recbox1'*/[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."status" != 'Active' /* loading for pp */ LIMIT 11 /*application='Recbox1'*/[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE ("users"."status" = 'Suspended' OR "users"."status" = 'Banned') /* loading for pp */ LIMIT 11 /*application='Recbox1'*/[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE ("users"."status" = 'Suspended' OR "users"."status" = 'Banned') /* loading for pp */ LIMIT 11 /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "description", "instructions", "is_public", "user_id", "created_at", "updated_at") VALUES ('Chocolate Chip Cookies', 'A classic cookie recipe that''s perfect for any occasion.', 'Preheat the oven to 350°F
+  In a large mixing bowl, cream together the butter and sugar
+  Add the eggs and vanilla extract and mix until combined
+  In a separate bowl, whisk together the flour, baking powder, baking soda, and salt
+  Gradually mix the dry ingredients into the wet ingredients
+  Stir in the chocolate chips
+  Drop spoonfuls of dough onto a baking sheet and bake for 10-12 minutes or until golden brown', 1, 1, '2025-09-15 06:53:18.247333', '2025-09-15 06:53:18.247333') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (10.4ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipe Create (0.3ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "description", "instructions", "is_public", "user_id", "created_at", "updated_at") VALUES ('Pancakes', 'A simple and delicious pancake recipe that''s perfect for breakfast.', 'In a large mixing bowl, whisk together the flour, sugar, baking powder, baking soda, and salt
+  In a separate bowl, whisk together the milk, egg, and melted butter
+  Gradually mix the wet ingredients into the dry ingredients
+  Heat a nonstick pan over medium heat
+  Pour 1/4 cup of batter onto the pan for each pancake
+  Cook until bubbles form on the surface, then flip and cook for an additional 1-2 minutes
+  Serve with syrup and butter', 1, 1, '2025-09-15 06:53:18.262961', '2025-09-15 06:53:18.262961') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipe Create (0.1ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "description", "instructions", "is_public", "user_id", "created_at", "updated_at") VALUES ('Mac and Cheese', 'A classic comfort food that''s easy to make and always delicious.', 'Preheat the oven to 375°F
+  Cook the macaroni according to the package directions
+  In a large saucepan, melt the butter over medium heat
+  Add the flour and whisk until smooth
+  Gradually whisk in the milk and bring to a boil
+  Reduce heat and simmer until the sauce thickens
+  Stir in the cheese until melted
+  Combine the macaroni and cheese sauce in a baking dish
+  Bake for 20-25 minutes or until bubbly', 1, 2, '2025-09-15 06:53:18.267714', '2025-09-15 06:53:18.267714') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipe Create (0.1ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "description", "instructions", "is_public", "user_id", "created_at", "updated_at") VALUES ('Chicken Alfredo', 'Creamy and rich, this pasta dish is a favorite for dinner parties or a cozy night in.', 'Cook the fettuccine according to package instructions
+Season chicken breasts with salt and pepper and cook in a pan with olive oil until browned on both sides
+Remove the chicken from the pan and set aside
+In the same pan, add butter and minced garlic, and cook until fragrant
+Add heavy cream and simmer until the sauce thickens
+Stir in grated parmesan cheese until melted and smooth
+Slice the chicken and add it to the sauce
+Serve the chicken alfredo over the fettuccine', 1, 3, '2025-09-15 06:53:18.271300', '2025-09-15 06:53:18.271300') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipe Create (0.1ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "description", "instructions", "is_public", "user_id", "created_at", "updated_at") VALUES ('Spaghetti and Meatballs', 'A classic Italian dish that''s hearty and satisfying.', 'Cook spaghetti according to package instructions
+In a large mixing bowl, combine ground beef, breadcrumbs, minced garlic, egg, parmesan cheese, salt, and pepper
+Roll the mixture into golf-ball-sized meatballs
+Heat olive oil in a large skillet and cook meatballs until browned on all sides
+Add tomato sauce and simmer for 15-20 minutes
+Serve meatballs and sauce over spaghetti', 1, 3, '2025-09-15 06:53:18.275090', '2025-09-15 06:53:18.275090') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipe Create (0.1ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "description", "instructions", "is_public", "user_id", "created_at", "updated_at") VALUES ('Beef Stroganoff', 'A classic Russian dish that''s easy to make and perfect for a hearty meal.', 'Cook egg noodles according to package instructions
+Heat butter in a large skillet and cook sliced beef until browned on all sides
+Remove beef and set aside
+In the same skillet, add onions and cook until softened
+Add sliced mushrooms and cook until they release their moisture
+Add flour and stir to coat the vegetables
+Gradually stir in beef broth and bring to a boil
+Reduce heat and simmer until the sauce thickens
+Add sour cream and stir until smooth
+Add the beef to the sauce and cook until heated through
+Serve beef stroganoff over egg noodles', 1, 4, '2025-09-15 06:53:18.278453', '2025-09-15 06:53:18.278453') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipe Create (0.1ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "description", "instructions", "is_public", "user_id", "created_at", "updated_at") VALUES ('Beef and Broccoli Stir-Fry', 'A quick and easy Asian-inspired dish that''s perfect for a weeknight dinner.', 'In a small mixing bowl, whisk together soy sauce, brown sugar, cornstarch, and water
+Thinly slice beef and toss with cornstarch until coated
+Heat vegetable oil in a wok or large skillet and cook beef until browned
+Remove beef and set aside
+In the same wok, add sliced garlic and ginger and cook until fragrant
+Add sliced onions and broccoli florets and cook until vegetables are tender
+Return beef to the wok and stir in the soy sauce mixture
+Cook until the sauce thickens
+Serve beef and broccoli stir-fry over rice', 1, 4, '2025-09-15 06:53:18.281840', '2025-09-15 06:53:18.281840') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 5 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipe Create (0.1ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "description", "instructions", "is_public", "user_id", "created_at", "updated_at") VALUES ('Chicken Parmesan', 'A classic Italian dish that features breaded and pan-fried chicken cutlets topped with tomato sauce and melted cheese.', 'Preheat the oven to 375°F (190°C).
+Pound chicken cutlets until they are about 1/4 inch thick
+Season chicken cutlets with salt and pepper
+In a shallow dish, whisk together eggs and milk
+In another shallow dish, combine bread crumbs, Parmesan cheese, and Italian seasoning
+Dredge chicken cutlets in the egg mixture and then in the bread crumb mixture, making sure they are evenly coated
+Heat vegetable oil in a large skillet over medium-high heat
+Cook chicken cutlets until browned on both sides, about 3-4 minutes per side
+Transfer chicken cutlets to a baking dish and top each one with tomato sauce and shredded mozzarella cheese
+Bake for 15-20 minutes, until the cheese is melted and bubbly
+Serve chicken Parmesan with pasta or a side salad', 1, 5, '2025-09-15 06:53:18.285469', '2025-09-15 06:53:18.285469') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 5 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipe Create (0.1ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "description", "instructions", "is_public", "user_id", "created_at", "updated_at") VALUES ('Creamy Tomato Soup', 'A comforting and easy-to-make soup that''s perfect for a chilly day.', 'In a large pot, heat butter over medium heat
+Add diced onions and cook until they are translucent
+Add minced garlic and cook until fragrant
+Add canned tomatoes (undrained), chicken broth, and sugar
+Bring to a boil and then reduce heat and simmer for 15-20 minutes
+Remove from heat and use an immersion blender to puree the soup until it''s smooth
+Stir in heavy cream and salt to taste
+Return soup to the stove and heat until it''s warmed through
+Serve creamy tomato soup with crusty bread or grilled cheese sandwiches', 1, 5, '2025-09-15 06:53:18.288587', '2025-09-15 06:53:18.288587') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 6 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipe Create (0.1ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "description", "instructions", "is_public", "user_id", "created_at", "updated_at") VALUES ('Grilled Lemon Garlic Shrimp', 'A flavorful and healthy seafood dish that''s perfect for a summer barbecue.', 'In a small bowl, whisk together olive oil, lemon juice, minced garlic, salt, and pepper
+Add peeled and deveined shrimp to the bowl and toss to coat
+Cover the bowl with plastic wrap and marinate in the refrigerator for 30 minutes
+Preheat a grill to medium-high heat
+Thread the shrimp onto skewers (if using wooden skewers, be sure to soak them in water for at least 30 minutes before using)
+Grill shrimp skewers for 2-3 minutes per side, until they are pink and opaque
+Serve grilled lemon garlic shrimp with a green salad or grilled vegetables', 1, 6, '2025-09-15 06:53:18.291146', '2025-09-15 06:53:18.291146') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 6 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipe Create (0.1ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "description", "instructions", "is_public", "user_id", "created_at", "updated_at") VALUES ('Roasted Root Vegetables', 'A simple and delicious side dish that features a variety of colorful root vegetables.', 'Preheat the oven to 400°F (200°C)
+Wash and chop a variety of root vegetables (such as carrots, parsnips, sweet potatoes, and beets) into bite-sized pieces
+Toss the vegetables with olive oil, salt, pepper, and any desired herbs or spices (such as thyme, rosemary, or cumin)
+Spread the vegetables out in a single layer on a baking sheet
+Roast the vegetables for 30-40 minutes, stirring occasionally, until they are tender and caramelized
+Serve roasted root vegetables as a side dish to any meal', 1, 6, '2025-09-15 06:53:18.294023', '2025-09-15 06:53:18.294023') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mIngredient Create (0.5ms)[0m  [1m[32mINSERT INTO "ingredients" ("ingr_name", "created_at", "updated_at") VALUES ('Cream', '2025-09-15 06:53:39.429853', '2025-09-15 06:53:39.429853') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mIngredient Create (0.3ms)[0m  [1m[32mINSERT INTO "ingredients" ("ingr_name", "created_at", "updated_at") VALUES ('Butter', '2025-09-15 06:53:39.432001', '2025-09-15 06:53:39.432001') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mIngredient Create (0.3ms)[0m  [1m[32mINSERT INTO "ingredients" ("ingr_name", "created_at", "updated_at") VALUES ('Sugar', '2025-09-15 06:53:39.433926', '2025-09-15 06:53:39.433926') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mIngredient Create (0.4ms)[0m  [1m[32mINSERT INTO "ingredients" ("ingr_name", "created_at", "updated_at") VALUES ('Eggs', '2025-09-15 06:53:39.436097', '2025-09-15 06:53:39.436097') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mIngredient Create (0.5ms)[0m  [1m[32mINSERT INTO "ingredients" ("ingr_name", "created_at", "updated_at") VALUES ('Vanilla Extract', '2025-09-15 06:53:39.438287', '2025-09-15 06:53:39.438287') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mIngredient Create (0.4ms)[0m  [1m[32mINSERT INTO "ingredients" ("ingr_name", "created_at", "updated_at") VALUES ('Flour', '2025-09-15 06:53:39.440826', '2025-09-15 06:53:39.440826') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mIngredient Create (0.4ms)[0m  [1m[32mINSERT INTO "ingredients" ("ingr_name", "created_at", "updated_at") VALUES ('Baking Soda', '2025-09-15 06:53:39.442951', '2025-09-15 06:53:39.442951') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mIngredient Create (0.4ms)[0m  [1m[32mINSERT INTO "ingredients" ("ingr_name", "created_at", "updated_at") VALUES ('Baking Powder', '2025-09-15 06:53:39.445166', '2025-09-15 06:53:39.445166') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mIngredient Create (0.4ms)[0m  [1m[32mINSERT INTO "ingredients" ("ingr_name", "created_at", "updated_at") VALUES ('Salt', '2025-09-15 06:53:39.447628', '2025-09-15 06:53:39.447628') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mIngredient Create (0.5ms)[0m  [1m[32mINSERT INTO "ingredients" ("ingr_name", "created_at", "updated_at") VALUES ('Chocolate Chips', '2025-09-15 06:53:39.449755', '2025-09-15 06:53:39.449755') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mIngredient Create (0.5ms)[0m  [1m[32mINSERT INTO "ingredients" ("ingr_name", "created_at", "updated_at") VALUES ('Milk', '2025-09-15 06:53:39.452320', '2025-09-15 06:53:39.452320') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mIngredient Create (0.4ms)[0m  [1m[32mINSERT INTO "ingredients" ("ingr_name", "created_at", "updated_at") VALUES ('Golden Syrup', '2025-09-15 06:53:39.454254', '2025-09-15 06:53:39.454254') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mIngredient Create (0.4ms)[0m  [1m[32mINSERT INTO "ingredients" ("ingr_name", "created_at", "updated_at") VALUES ('Macaroni', '2025-09-15 06:53:39.455891', '2025-09-15 06:53:39.455891') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mIngredient Create (1.3ms)[0m  [1m[32mINSERT INTO "ingredients" ("ingr_name", "created_at", "updated_at") VALUES ('Cheddar Cheese', '2025-09-15 06:53:39.457696', '2025-09-15 06:53:39.457696') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mIngredient Create (0.5ms)[0m  [1m[32mINSERT INTO "ingredients" ("ingr_name", "created_at", "updated_at") VALUES ('Chicken Breast', '2025-09-15 06:53:39.467768', '2025-09-15 06:53:39.467768') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mIngredient Create (0.5ms)[0m  [1m[32mINSERT INTO "ingredients" ("ingr_name", "created_at", "updated_at") VALUES ('Pepper', '2025-09-15 06:53:39.469906', '2025-09-15 06:53:39.469906') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mIngredient Create (0.3ms)[0m  [1m[32mINSERT INTO "ingredients" ("ingr_name", "created_at", "updated_at") VALUES ('Fettucine', '2025-09-15 06:53:39.471700', '2025-09-15 06:53:39.471700') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mIngredient Create (0.4ms)[0m  [1m[32mINSERT INTO "ingredients" ("ingr_name", "created_at", "updated_at") VALUES ('Olive Oil', '2025-09-15 06:53:39.473230', '2025-09-15 06:53:39.473230') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mIngredient Create (0.3ms)[0m  [1m[32mINSERT INTO "ingredients" ("ingr_name", "created_at", "updated_at") VALUES ('Garlic', '2025-09-15 06:53:39.474881', '2025-09-15 06:53:39.474881') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mIngredient Create (0.3ms)[0m  [1m[32mINSERT INTO "ingredients" ("ingr_name", "created_at", "updated_at") VALUES ('Parmesan Cheese', '2025-09-15 06:53:39.476402', '2025-09-15 06:53:39.476402') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mIngredient Create (0.4ms)[0m  [1m[32mINSERT INTO "ingredients" ("ingr_name", "created_at", "updated_at") VALUES ('Spaghetti', '2025-09-15 06:53:39.477974', '2025-09-15 06:53:39.477974') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mIngredient Create (0.4ms)[0m  [1m[32mINSERT INTO "ingredients" ("ingr_name", "created_at", "updated_at") VALUES ('Ground Beef', '2025-09-15 06:53:39.479601', '2025-09-15 06:53:39.479601') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mIngredient Create (0.7ms)[0m  [1m[32mINSERT INTO "ingredients" ("ingr_name", "created_at", "updated_at") VALUES ('Breadcrumbs', '2025-09-15 06:53:39.481198', '2025-09-15 06:53:39.481198') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mIngredient Create (0.4ms)[0m  [1m[32mINSERT INTO "ingredients" ("ingr_name", "created_at", "updated_at") VALUES ('Passata', '2025-09-15 06:53:39.483993', '2025-09-15 06:53:39.483993') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mIngredient Create (0.4ms)[0m  [1m[32mINSERT INTO "ingredients" ("ingr_name", "created_at", "updated_at") VALUES ('Beef', '2025-09-15 06:53:39.485570', '2025-09-15 06:53:39.485570') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mIngredient Create (0.4ms)[0m  [1m[32mINSERT INTO "ingredients" ("ingr_name", "created_at", "updated_at") VALUES ('Egg Noodles', '2025-09-15 06:53:39.487166', '2025-09-15 06:53:39.487166') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mIngredient Create (0.4ms)[0m  [1m[32mINSERT INTO "ingredients" ("ingr_name", "created_at", "updated_at") VALUES ('Onions', '2025-09-15 06:53:39.488719', '2025-09-15 06:53:39.488719') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mIngredient Create (0.3ms)[0m  [1m[32mINSERT INTO "ingredients" ("ingr_name", "created_at", "updated_at") VALUES ('Mushrooms', '2025-09-15 06:53:39.490214', '2025-09-15 06:53:39.490214') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mIngredient Create (0.3ms)[0m  [1m[32mINSERT INTO "ingredients" ("ingr_name", "created_at", "updated_at") VALUES ('Beef Stock', '2025-09-15 06:53:39.491503', '2025-09-15 06:53:39.491503') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mIngredient Create (0.4ms)[0m  [1m[32mINSERT INTO "ingredients" ("ingr_name", "created_at", "updated_at") VALUES ('Sour Cream', '2025-09-15 06:53:39.492868', '2025-09-15 06:53:39.492868') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mIngredient Create (0.4ms)[0m  [1m[32mINSERT INTO "ingredients" ("ingr_name", "created_at", "updated_at") VALUES ('Soy Sauce', '2025-09-15 06:53:39.494540', '2025-09-15 06:53:39.494540') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mIngredient Create (0.4ms)[0m  [1m[32mINSERT INTO "ingredients" ("ingr_name", "created_at", "updated_at") VALUES ('Brown Sugar', '2025-09-15 06:53:39.496252', '2025-09-15 06:53:39.496252') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mIngredient Create (1.2ms)[0m  [1m[32mINSERT INTO "ingredients" ("ingr_name", "created_at", "updated_at") VALUES ('Cornstarch', '2025-09-15 06:53:39.497834', '2025-09-15 06:53:39.497834') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mIngredient Create (0.3ms)[0m  [1m[32mINSERT INTO "ingredients" ("ingr_name", "created_at", "updated_at") VALUES ('Water', '2025-09-15 06:53:39.500333', '2025-09-15 06:53:39.500333') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mIngredient Create (0.3ms)[0m  [1m[32mINSERT INTO "ingredients" ("ingr_name", "created_at", "updated_at") VALUES ('Ginger', '2025-09-15 06:53:39.501727', '2025-09-15 06:53:39.501727') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mIngredient Create (0.3ms)[0m  [1m[32mINSERT INTO "ingredients" ("ingr_name", "created_at", "updated_at") VALUES ('Broccoli', '2025-09-15 06:53:39.502961', '2025-09-15 06:53:39.502961') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mIngredient Create (0.4ms)[0m  [1m[32mINSERT INTO "ingredients" ("ingr_name", "created_at", "updated_at") VALUES ('White Rice', '2025-09-15 06:53:39.507594', '2025-09-15 06:53:39.507594') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mIngredient Create (0.7ms)[0m  [1m[32mINSERT INTO "ingredients" ("ingr_name", "created_at", "updated_at") VALUES ('Italian Seasoning', '2025-09-15 06:53:39.509720', '2025-09-15 06:53:39.509720') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mIngredient Create (0.7ms)[0m  [1m[32mINSERT INTO "ingredients" ("ingr_name", "created_at", "updated_at") VALUES ('Vegetable Oil', '2025-09-15 06:53:39.512626', '2025-09-15 06:53:39.512626') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mIngredient Create (0.4ms)[0m  [1m[32mINSERT INTO "ingredients" ("ingr_name", "created_at", "updated_at") VALUES ('Mozzarella Cheese', '2025-09-15 06:53:39.514551', '2025-09-15 06:53:39.514551') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mIngredient Create (0.4ms)[0m  [1m[32mINSERT INTO "ingredients" ("ingr_name", "created_at", "updated_at") VALUES ('Chicken Stock', '2025-09-15 06:53:39.516183', '2025-09-15 06:53:39.516183') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mIngredient Create (0.4ms)[0m  [1m[32mINSERT INTO "ingredients" ("ingr_name", "created_at", "updated_at") VALUES ('White Sugar', '2025-09-15 06:53:39.518009', '2025-09-15 06:53:39.518009') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mIngredient Create (0.4ms)[0m  [1m[32mINSERT INTO "ingredients" ("ingr_name", "created_at", "updated_at") VALUES ('Lemon Juice', '2025-09-15 06:53:39.519585', '2025-09-15 06:53:39.519585') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mIngredient Create (0.4ms)[0m  [1m[32mINSERT INTO "ingredients" ("ingr_name", "created_at", "updated_at") VALUES ('Prawns', '2025-09-15 06:53:39.521158', '2025-09-15 06:53:39.521158') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mIngredient Create (0.4ms)[0m  [1m[32mINSERT INTO "ingredients" ("ingr_name", "created_at", "updated_at") VALUES ('Carrots', '2025-09-15 06:53:39.522921', '2025-09-15 06:53:39.522921') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mIngredient Create (0.5ms)[0m  [1m[32mINSERT INTO "ingredients" ("ingr_name", "created_at", "updated_at") VALUES ('Parsnips', '2025-09-15 06:53:39.524894', '2025-09-15 06:53:39.524894') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mIngredient Create (0.5ms)[0m  [1m[32mINSERT INTO "ingredients" ("ingr_name", "created_at", "updated_at") VALUES ('Sweet Potatoes', '2025-09-15 06:53:39.527459', '2025-09-15 06:53:39.527459') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mIngredient Create (0.5ms)[0m  [1m[32mINSERT INTO "ingredients" ("ingr_name", "created_at", "updated_at") VALUES ('Potatoes', '2025-09-15 06:53:39.529634', '2025-09-15 06:53:39.529634') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mIngredient Create (0.5ms)[0m  [1m[32mINSERT INTO "ingredients" ("ingr_name", "created_at", "updated_at") VALUES ('Beets', '2025-09-15 06:53:39.531929', '2025-09-15 06:53:39.531929') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mIngredient Create (0.6ms)[0m  [1m[32mINSERT INTO "ingredients" ("ingr_name", "created_at", "updated_at") VALUES ('Thyme', '2025-09-15 06:53:39.534340', '2025-09-15 06:53:39.534340') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mIngredient Create (0.7ms)[0m  [1m[32mINSERT INTO "ingredients" ("ingr_name", "created_at", "updated_at") VALUES ('Rosemary', '2025-09-15 06:53:39.536802', '2025-09-15 06:53:39.536802') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mIngredient Create (0.5ms)[0m  [1m[32mINSERT INTO "ingredients" ("ingr_name", "created_at", "updated_at") VALUES ('Cumin', '2025-09-15 06:53:39.539239', '2025-09-15 06:53:39.539239') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = 1 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = 1 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Create (0.2ms)[0m  [1m[32mINSERT INTO "recipe_ingredients" ("ingr_qty", "recipe_id", "ingredient_id", "created_at", "updated_at") VALUES ('250mL', 1, 1, '2025-09-15 06:53:58.572999', '2025-09-15 06:53:58.572999') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = 1 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = 2 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Create (0.1ms)[0m  [1m[32mINSERT INTO "recipe_ingredients" ("ingr_qty", "recipe_id", "ingredient_id", "created_at", "updated_at") VALUES ('100g', 1, 2, '2025-09-15 06:53:58.577151', '2025-09-15 06:53:58.577151') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = 1 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = 3 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Create (0.1ms)[0m  [1m[32mINSERT INTO "recipe_ingredients" ("ingr_qty", "recipe_id", "ingredient_id", "created_at", "updated_at") VALUES ('1 cup', 1, 3, '2025-09-15 06:53:58.582067', '2025-09-15 06:53:58.582067') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = 1 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = 4 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Create (0.1ms)[0m  [1m[32mINSERT INTO "recipe_ingredients" ("ingr_qty", "recipe_id", "ingredient_id", "created_at", "updated_at") VALUES ('2 large', 1, 4, '2025-09-15 06:53:58.587203', '2025-09-15 06:53:58.587203') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = 1 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = 5 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Create (0.1ms)[0m  [1m[32mINSERT INTO "recipe_ingredients" ("ingr_qty", "recipe_id", "ingredient_id", "created_at", "updated_at") VALUES ('1 tspn', 1, 5, '2025-09-15 06:53:58.591628', '2025-09-15 06:53:58.591628') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = 1 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = 6 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Create (0.1ms)[0m  [1m[32mINSERT INTO "recipe_ingredients" ("ingr_qty", "recipe_id", "ingredient_id", "created_at", "updated_at") VALUES ('2 cups', 1, 6, '2025-09-15 06:53:58.595860', '2025-09-15 06:53:58.595860') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = 1 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = 8 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Create (0.1ms)[0m  [1m[32mINSERT INTO "recipe_ingredients" ("ingr_qty", "recipe_id", "ingredient_id", "created_at", "updated_at") VALUES ('1 tblspn', 1, 8, '2025-09-15 06:53:58.599397', '2025-09-15 06:53:58.599397') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mRecipe Load (0.7ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = 1 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = 7 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Create (0.1ms)[0m  [1m[32mINSERT INTO "recipe_ingredients" ("ingr_qty", "recipe_id", "ingredient_id", "created_at", "updated_at") VALUES ('1 tblspn', 1, 7, '2025-09-15 06:53:58.605986', '2025-09-15 06:53:58.605986') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = 1 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = 9 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Create (0.1ms)[0m  [1m[32mINSERT INTO "recipe_ingredients" ("ingr_qty", "recipe_id", "ingredient_id", "created_at", "updated_at") VALUES ('1 tspn', 1, 9, '2025-09-15 06:53:58.611187', '2025-09-15 06:53:58.611187') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = 1 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = 10 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Create (0.1ms)[0m  [1m[32mINSERT INTO "recipe_ingredients" ("ingr_qty", "recipe_id", "ingredient_id", "created_at", "updated_at") VALUES ('1 cup', 1, 10, '2025-09-15 06:53:58.615405', '2025-09-15 06:53:58.615405') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = 2 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = 6 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Create (0.1ms)[0m  [1m[32mINSERT INTO "recipe_ingredients" ("ingr_qty", "recipe_id", "ingredient_id", "created_at", "updated_at") VALUES ('2 cups', 2, 6, '2025-09-15 06:53:58.618959', '2025-09-15 06:53:58.618959') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = 2 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = 3 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Create (0.1ms)[0m  [1m[32mINSERT INTO "recipe_ingredients" ("ingr_qty", "recipe_id", "ingredient_id", "created_at", "updated_at") VALUES ('1 cup', 2, 3, '2025-09-15 06:53:58.622693', '2025-09-15 06:53:58.622693') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = 2 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = 8 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Create (0.1ms)[0m  [1m[32mINSERT INTO "recipe_ingredients" ("ingr_qty", "recipe_id", "ingredient_id", "created_at", "updated_at") VALUES ('1 tblspn', 2, 8, '2025-09-15 06:53:58.626352', '2025-09-15 06:53:58.626352') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = 2 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = 7 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Create (0.5ms)[0m  [1m[32mINSERT INTO "recipe_ingredients" ("ingr_qty", "recipe_id", "ingredient_id", "created_at", "updated_at") VALUES ('1 tblspn', 2, 7, '2025-09-15 06:53:58.631186', '2025-09-15 06:53:58.631186') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mRecipe Load (1.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = 2 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = 9 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Create (0.1ms)[0m  [1m[32mINSERT INTO "recipe_ingredients" ("ingr_qty", "recipe_id", "ingredient_id", "created_at", "updated_at") VALUES ('1 tspn', 2, 9, '2025-09-15 06:53:58.636138', '2025-09-15 06:53:58.636138') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mRecipe Load (0.8ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = 2 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = 11 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Create (0.2ms)[0m  [1m[32mINSERT INTO "recipe_ingredients" ("ingr_qty", "recipe_id", "ingredient_id", "created_at", "updated_at") VALUES ('1 cup', 2, 11, '2025-09-15 06:53:58.641150', '2025-09-15 06:53:58.641150') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mRecipe Load (0.9ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = 2 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mIngredient Load (0.3ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = 4 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Create (0.2ms)[0m  [1m[32mINSERT INTO "recipe_ingredients" ("ingr_qty", "recipe_id", "ingredient_id", "created_at", "updated_at") VALUES ('1 large', 2, 4, '2025-09-15 06:53:58.646386', '2025-09-15 06:53:58.646386') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = 2 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = 2 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Create (0.1ms)[0m  [1m[32mINSERT INTO "recipe_ingredients" ("ingr_qty", "recipe_id", "ingredient_id", "created_at", "updated_at") VALUES ('100g', 2, 2, '2025-09-15 06:53:58.651640', '2025-09-15 06:53:58.651640') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = 2 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = 12 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Create (0.1ms)[0m  [1m[32mINSERT INTO "recipe_ingredients" ("ingr_qty", "recipe_id", "ingredient_id", "created_at", "updated_at") VALUES ('To taste', 2, 12, '2025-09-15 06:53:58.656769', '2025-09-15 06:53:58.656769') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = 3 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = 13 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Create (0.1ms)[0m  [1m[32mINSERT INTO "recipe_ingredients" ("ingr_qty", "recipe_id", "ingredient_id", "created_at", "updated_at") VALUES ('1 bag, cooked', 3, 13, '2025-09-15 06:53:58.661249', '2025-09-15 06:53:58.661249') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = 3 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = 2 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Create (0.1ms)[0m  [1m[32mINSERT INTO "recipe_ingredients" ("ingr_qty", "recipe_id", "ingredient_id", "created_at", "updated_at") VALUES ('100g', 3, 2, '2025-09-15 06:53:58.664897', '2025-09-15 06:53:58.664897') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = 3 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = 6 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Create (0.1ms)[0m  [1m[32mINSERT INTO "recipe_ingredients" ("ingr_qty", "recipe_id", "ingredient_id", "created_at", "updated_at") VALUES ('1/2 cup', 3, 6, '2025-09-15 06:53:58.668740', '2025-09-15 06:53:58.668740') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mRecipe Load (0.9ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = 3 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = 11 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Create (0.1ms)[0m  [1m[32mINSERT INTO "recipe_ingredients" ("ingr_qty", "recipe_id", "ingredient_id", "created_at", "updated_at") VALUES ('500mL', 3, 11, '2025-09-15 06:53:58.673173', '2025-09-15 06:53:58.673173') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = 3 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = 14 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Create (0.1ms)[0m  [1m[32mINSERT INTO "recipe_ingredients" ("ingr_qty", "recipe_id", "ingredient_id", "created_at", "updated_at") VALUES ('2 cups, shredded', 3, 14, '2025-09-15 06:53:58.676691', '2025-09-15 06:53:58.676691') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = 4 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = 17 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Create (0.1ms)[0m  [1m[32mINSERT INTO "recipe_ingredients" ("ingr_qty", "recipe_id", "ingredient_id", "created_at", "updated_at") VALUES ('1 bag, cooked', 4, 17, '2025-09-15 06:53:58.681824', '2025-09-15 06:53:58.681824') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = 4 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = 15 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Create (0.2ms)[0m  [1m[32mINSERT INTO "recipe_ingredients" ("ingr_qty", "recipe_id", "ingredient_id", "created_at", "updated_at") VALUES ('2, large', 4, 15, '2025-09-15 06:53:58.686669', '2025-09-15 06:53:58.686669') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = 4 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = 9 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Create (0.1ms)[0m  [1m[32mINSERT INTO "recipe_ingredients" ("ingr_qty", "recipe_id", "ingredient_id", "created_at", "updated_at") VALUES ('2 tspn', 4, 9, '2025-09-15 06:53:58.690561', '2025-09-15 06:53:58.690561') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = 4 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = 16 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Create (0.3ms)[0m  [1m[32mINSERT INTO "recipe_ingredients" ("ingr_qty", "recipe_id", "ingredient_id", "created_at", "updated_at") VALUES ('2 tspn', 4, 16, '2025-09-15 06:53:58.694183', '2025-09-15 06:53:58.694183') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mRecipe Load (0.7ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = 4 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = 18 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Create (0.1ms)[0m  [1m[32mINSERT INTO "recipe_ingredients" ("ingr_qty", "recipe_id", "ingredient_id", "created_at", "updated_at") VALUES ('1 tblspn', 4, 18, '2025-09-15 06:53:58.699971', '2025-09-15 06:53:58.699971') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = 4 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = 2 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Create (0.1ms)[0m  [1m[32mINSERT INTO "recipe_ingredients" ("ingr_qty", "recipe_id", "ingredient_id", "created_at", "updated_at") VALUES ('100g', 4, 2, '2025-09-15 06:53:58.706358', '2025-09-15 06:53:58.706358') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = 4 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = 19 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Create (0.1ms)[0m  [1m[32mINSERT INTO "recipe_ingredients" ("ingr_qty", "recipe_id", "ingredient_id", "created_at", "updated_at") VALUES ('1 clove, minced', 4, 19, '2025-09-15 06:53:58.711122', '2025-09-15 06:53:58.711122') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = 4 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = 1 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Create (0.1ms)[0m  [1m[32mINSERT INTO "recipe_ingredients" ("ingr_qty", "recipe_id", "ingredient_id", "created_at", "updated_at") VALUES ('250mL', 4, 1, '2025-09-15 06:53:58.716629', '2025-09-15 06:53:58.716629') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = 4 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = 20 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Create (0.1ms)[0m  [1m[32mINSERT INTO "recipe_ingredients" ("ingr_qty", "recipe_id", "ingredient_id", "created_at", "updated_at") VALUES ('1 cup', 4, 20, '2025-09-15 06:53:58.721552', '2025-09-15 06:53:58.721552') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mRecipe Load (1.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = 5 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = 21 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Create (0.1ms)[0m  [1m[32mINSERT INTO "recipe_ingredients" ("ingr_qty", "recipe_id", "ingredient_id", "created_at", "updated_at") VALUES ('1 packet', 5, 21, '2025-09-15 06:53:58.726628', '2025-09-15 06:53:58.726628') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = 5 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = 22 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Create (0.1ms)[0m  [1m[32mINSERT INTO "recipe_ingredients" ("ingr_qty", "recipe_id", "ingredient_id", "created_at", "updated_at") VALUES ('1Kg', 5, 22, '2025-09-15 06:53:58.729577', '2025-09-15 06:53:58.729577') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = 5 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = 23 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Create (0.1ms)[0m  [1m[32mINSERT INTO "recipe_ingredients" ("ingr_qty", "recipe_id", "ingredient_id", "created_at", "updated_at") VALUES ('1 cup', 5, 23, '2025-09-15 06:53:58.732715', '2025-09-15 06:53:58.732715') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = 5 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = 4 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Create (0.1ms)[0m  [1m[32mINSERT INTO "recipe_ingredients" ("ingr_qty", "recipe_id", "ingredient_id", "created_at", "updated_at") VALUES ('1 large', 5, 4, '2025-09-15 06:53:58.735774', '2025-09-15 06:53:58.735774') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = 5 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = 20 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Create (0.1ms)[0m  [1m[32mINSERT INTO "recipe_ingredients" ("ingr_qty", "recipe_id", "ingredient_id", "created_at", "updated_at") VALUES ('1 cup', 5, 20, '2025-09-15 06:53:58.739109', '2025-09-15 06:53:58.739109') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = 5 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = 9 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Create (0.3ms)[0m  [1m[32mINSERT INTO "recipe_ingredients" ("ingr_qty", "recipe_id", "ingredient_id", "created_at", "updated_at") VALUES ('1 tspn', 5, 9, '2025-09-15 06:53:58.746626', '2025-09-15 06:53:58.746626') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = 5 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = 16 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Create (0.1ms)[0m  [1m[32mINSERT INTO "recipe_ingredients" ("ingr_qty", "recipe_id", "ingredient_id", "created_at", "updated_at") VALUES ('1 tspn', 5, 16, '2025-09-15 06:53:58.749893', '2025-09-15 06:53:58.749893') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = 5 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = 18 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Create (0.1ms)[0m  [1m[32mINSERT INTO "recipe_ingredients" ("ingr_qty", "recipe_id", "ingredient_id", "created_at", "updated_at") VALUES ('1 tblspn', 5, 18, '2025-09-15 06:53:58.753104', '2025-09-15 06:53:58.753104') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = 5 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = 24 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Create (0.1ms)[0m  [1m[32mINSERT INTO "recipe_ingredients" ("ingr_qty", "recipe_id", "ingredient_id", "created_at", "updated_at") VALUES ('1 jar', 5, 24, '2025-09-15 06:53:58.756734', '2025-09-15 06:53:58.756734') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = 6 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = 26 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Create (0.3ms)[0m  [1m[32mINSERT INTO "recipe_ingredients" ("ingr_qty", "recipe_id", "ingredient_id", "created_at", "updated_at") VALUES ('1 packet', 6, 26, '2025-09-15 06:53:58.761487', '2025-09-15 06:53:58.761487') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = 6 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = 2 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Create (0.1ms)[0m  [1m[32mINSERT INTO "recipe_ingredients" ("ingr_qty", "recipe_id", "ingredient_id", "created_at", "updated_at") VALUES ('100g', 6, 2, '2025-09-15 06:53:58.765304', '2025-09-15 06:53:58.765304') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mRecipe Load (0.7ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = 6 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = 25 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Create (0.1ms)[0m  [1m[32mINSERT INTO "recipe_ingredients" ("ingr_qty", "recipe_id", "ingredient_id", "created_at", "updated_at") VALUES ('250g', 6, 25, '2025-09-15 06:53:58.769567', '2025-09-15 06:53:58.769567') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = 6 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = 27 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Create (0.1ms)[0m  [1m[32mINSERT INTO "recipe_ingredients" ("ingr_qty", "recipe_id", "ingredient_id", "created_at", "updated_at") VALUES ('1 large', 6, 27, '2025-09-15 06:53:58.774534', '2025-09-15 06:53:58.774534') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = 6 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = 28 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Create (0.1ms)[0m  [1m[32mINSERT INTO "recipe_ingredients" ("ingr_qty", "recipe_id", "ingredient_id", "created_at", "updated_at") VALUES ('200g', 6, 28, '2025-09-15 06:53:58.778543', '2025-09-15 06:53:58.778543') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mRecipe Load (1.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = 6 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = 6 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Create (0.3ms)[0m  [1m[32mINSERT INTO "recipe_ingredients" ("ingr_qty", "recipe_id", "ingredient_id", "created_at", "updated_at") VALUES ('1/2 cup', 6, 6, '2025-09-15 06:53:58.784447', '2025-09-15 06:53:58.784447') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mRecipe Load (0.7ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = 6 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = 29 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Create (0.1ms)[0m  [1m[32mINSERT INTO "recipe_ingredients" ("ingr_qty", "recipe_id", "ingredient_id", "created_at", "updated_at") VALUES ('250mL', 6, 29, '2025-09-15 06:53:58.789620', '2025-09-15 06:53:58.789620') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = 6 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = 30 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Create (0.1ms)[0m  [1m[32mINSERT INTO "recipe_ingredients" ("ingr_qty", "recipe_id", "ingredient_id", "created_at", "updated_at") VALUES ('250mL', 6, 30, '2025-09-15 06:53:58.794589', '2025-09-15 06:53:58.794589') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = 7 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = 31 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Create (0.1ms)[0m  [1m[32mINSERT INTO "recipe_ingredients" ("ingr_qty", "recipe_id", "ingredient_id", "created_at", "updated_at") VALUES ('1/2 cup', 7, 31, '2025-09-15 06:53:58.799316', '2025-09-15 06:53:58.799316') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = 7 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = 32 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Create (0.5ms)[0m  [1m[32mINSERT INTO "recipe_ingredients" ("ingr_qty", "recipe_id", "ingredient_id", "created_at", "updated_at") VALUES ('1/4 cup', 7, 32, '2025-09-15 06:53:58.805573', '2025-09-15 06:53:58.805573') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mRecipe Load (0.7ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = 7 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = 33 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Create (0.2ms)[0m  [1m[32mINSERT INTO "recipe_ingredients" ("ingr_qty", "recipe_id", "ingredient_id", "created_at", "updated_at") VALUES ('1 tblspn', 7, 33, '2025-09-15 06:53:58.811376', '2025-09-15 06:53:58.811376') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mRecipe Load (0.8ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = 7 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = 34 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Create (0.1ms)[0m  [1m[32mINSERT INTO "recipe_ingredients" ("ingr_qty", "recipe_id", "ingredient_id", "created_at", "updated_at") VALUES ('200mL', 7, 34, '2025-09-15 06:53:58.816062', '2025-09-15 06:53:58.816062') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = 7 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = 25 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Create (0.1ms)[0m  [1m[32mINSERT INTO "recipe_ingredients" ("ingr_qty", "recipe_id", "ingredient_id", "created_at", "updated_at") VALUES ('250g', 7, 25, '2025-09-15 06:53:58.820769', '2025-09-15 06:53:58.820769') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mRecipe Load (1.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = 7 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = 39 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Create (0.1ms)[0m  [1m[32mINSERT INTO "recipe_ingredients" ("ingr_qty", "recipe_id", "ingredient_id", "created_at", "updated_at") VALUES ('1 tblspn', 7, 39, '2025-09-15 06:53:58.825575', '2025-09-15 06:53:58.825575') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = 7 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = 19 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Create (0.2ms)[0m  [1m[32mINSERT INTO "recipe_ingredients" ("ingr_qty", "recipe_id", "ingredient_id", "created_at", "updated_at") VALUES ('1 clove', 7, 19, '2025-09-15 06:53:58.830467', '2025-09-15 06:53:58.830467') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = 7 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = 35 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Create (0.1ms)[0m  [1m[32mINSERT INTO "recipe_ingredients" ("ingr_qty", "recipe_id", "ingredient_id", "created_at", "updated_at") VALUES ('1 inch', 7, 35, '2025-09-15 06:53:58.836459', '2025-09-15 06:53:58.836459') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mRecipe Load (0.8ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = 7 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = 27 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Create (0.1ms)[0m  [1m[32mINSERT INTO "recipe_ingredients" ("ingr_qty", "recipe_id", "ingredient_id", "created_at", "updated_at") VALUES ('1 large', 7, 27, '2025-09-15 06:53:58.842237', '2025-09-15 06:53:58.842237') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mRecipe Load (0.8ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = 7 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = 36 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Create (0.2ms)[0m  [1m[32mINSERT INTO "recipe_ingredients" ("ingr_qty", "recipe_id", "ingredient_id", "created_at", "updated_at") VALUES ('1, medium', 7, 36, '2025-09-15 06:53:58.847584', '2025-09-15 06:53:58.847584') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = 8 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = 15 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Create (0.1ms)[0m  [1m[32mINSERT INTO "recipe_ingredients" ("ingr_qty", "recipe_id", "ingredient_id", "created_at", "updated_at") VALUES ('2, large, halved', 8, 15, '2025-09-15 06:53:58.851796', '2025-09-15 06:53:58.851796') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = 8 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = 9 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Create (0.2ms)[0m  [1m[32mINSERT INTO "recipe_ingredients" ("ingr_qty", "recipe_id", "ingredient_id", "created_at", "updated_at") VALUES ('1 tspn', 8, 9, '2025-09-15 06:53:58.856112', '2025-09-15 06:53:58.856112') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = 8 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mIngredient Load (0.8ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = 16 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Create (0.1ms)[0m  [1m[32mINSERT INTO "recipe_ingredients" ("ingr_qty", "recipe_id", "ingredient_id", "created_at", "updated_at") VALUES ('1 tspn', 8, 16, '2025-09-15 06:53:58.860598', '2025-09-15 06:53:58.860598') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = 8 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = 4 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Create (0.1ms)[0m  [1m[32mINSERT INTO "recipe_ingredients" ("ingr_qty", "recipe_id", "ingredient_id", "created_at", "updated_at") VALUES ('2 large', 8, 4, '2025-09-15 06:53:58.864341', '2025-09-15 06:53:58.864341') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = 8 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = 11 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Create (0.2ms)[0m  [1m[32mINSERT INTO "recipe_ingredients" ("ingr_qty", "recipe_id", "ingredient_id", "created_at", "updated_at") VALUES ('1 cup', 8, 11, '2025-09-15 06:53:58.868420', '2025-09-15 06:53:58.868420') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = 8 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = 23 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Create (0.2ms)[0m  [1m[32mINSERT INTO "recipe_ingredients" ("ingr_qty", "recipe_id", "ingredient_id", "created_at", "updated_at") VALUES ('2 cups', 8, 23, '2025-09-15 06:53:58.872903', '2025-09-15 06:53:58.872903') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = 8 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = 20 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Create (0.1ms)[0m  [1m[32mINSERT INTO "recipe_ingredients" ("ingr_qty", "recipe_id", "ingredient_id", "created_at", "updated_at") VALUES ('1 cup', 8, 20, '2025-09-15 06:53:58.876826', '2025-09-15 06:53:58.876826') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = 8 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = 38 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Create (0.1ms)[0m  [1m[32mINSERT INTO "recipe_ingredients" ("ingr_qty", "recipe_id", "ingredient_id", "created_at", "updated_at") VALUES ('1 tblspn', 8, 38, '2025-09-15 06:53:58.881036', '2025-09-15 06:53:58.881036') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = 8 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = 39 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Create (0.2ms)[0m  [1m[32mINSERT INTO "recipe_ingredients" ("ingr_qty", "recipe_id", "ingredient_id", "created_at", "updated_at") VALUES ('1 tblspn', 8, 39, '2025-09-15 06:53:58.884951', '2025-09-15 06:53:58.884951') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = 8 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = 24 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Create (0.1ms)[0m  [1m[32mINSERT INTO "recipe_ingredients" ("ingr_qty", "recipe_id", "ingredient_id", "created_at", "updated_at") VALUES ('1 jar', 8, 24, '2025-09-15 06:53:58.888360', '2025-09-15 06:53:58.888360') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = 8 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = 40 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Create (0.1ms)[0m  [1m[32mINSERT INTO "recipe_ingredients" ("ingr_qty", "recipe_id", "ingredient_id", "created_at", "updated_at") VALUES ('2 cups', 8, 40, '2025-09-15 06:53:58.892413', '2025-09-15 06:53:58.892413') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = 9 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = 2 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Create (0.1ms)[0m  [1m[32mINSERT INTO "recipe_ingredients" ("ingr_qty", "recipe_id", "ingredient_id", "created_at", "updated_at") VALUES ('100g', 9, 2, '2025-09-15 06:53:58.896285', '2025-09-15 06:53:58.896285') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = 9 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = 27 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Create (0.1ms)[0m  [1m[32mINSERT INTO "recipe_ingredients" ("ingr_qty", "recipe_id", "ingredient_id", "created_at", "updated_at") VALUES ('1 large', 9, 27, '2025-09-15 06:53:58.899925', '2025-09-15 06:53:58.899925') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = 9 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = 19 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Create (0.2ms)[0m  [1m[32mINSERT INTO "recipe_ingredients" ("ingr_qty", "recipe_id", "ingredient_id", "created_at", "updated_at") VALUES ('1 clove, minced', 9, 19, '2025-09-15 06:53:58.904621', '2025-09-15 06:53:58.904621') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = 9 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = 24 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Create (0.1ms)[0m  [1m[32mINSERT INTO "recipe_ingredients" ("ingr_qty", "recipe_id", "ingredient_id", "created_at", "updated_at") VALUES ('1 jar', 9, 24, '2025-09-15 06:53:58.908743', '2025-09-15 06:53:58.908743') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = 9 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = 41 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Create (0.1ms)[0m  [1m[32mINSERT INTO "recipe_ingredients" ("ingr_qty", "recipe_id", "ingredient_id", "created_at", "updated_at") VALUES ('500mL', 9, 41, '2025-09-15 06:53:58.912973', '2025-09-15 06:53:58.912973') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = 9 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = 3 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Create (0.1ms)[0m  [1m[32mINSERT INTO "recipe_ingredients" ("ingr_qty", "recipe_id", "ingredient_id", "created_at", "updated_at") VALUES ('1 tspn', 9, 3, '2025-09-15 06:53:58.916458', '2025-09-15 06:53:58.916458') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mRecipe Load (0.8ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = 9 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = 1 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Create (0.1ms)[0m  [1m[32mINSERT INTO "recipe_ingredients" ("ingr_qty", "recipe_id", "ingredient_id", "created_at", "updated_at") VALUES ('250mL', 9, 1, '2025-09-15 06:53:58.922235', '2025-09-15 06:53:58.922235') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = 9 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = 9 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Create (0.1ms)[0m  [1m[32mINSERT INTO "recipe_ingredients" ("ingr_qty", "recipe_id", "ingredient_id", "created_at", "updated_at") VALUES ('1 tspn', 9, 9, '2025-09-15 06:53:58.927375', '2025-09-15 06:53:58.927375') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mRecipe Load (0.7ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = 10 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = 18 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Create (0.1ms)[0m  [1m[32mINSERT INTO "recipe_ingredients" ("ingr_qty", "recipe_id", "ingredient_id", "created_at", "updated_at") VALUES ('1 tblspn', 10, 18, '2025-09-15 06:53:58.933039', '2025-09-15 06:53:58.933039') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mRecipe Load (0.7ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = 10 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = 43 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Create (0.1ms)[0m  [1m[32mINSERT INTO "recipe_ingredients" ("ingr_qty", "recipe_id", "ingredient_id", "created_at", "updated_at") VALUES ('2 tblspn', 10, 43, '2025-09-15 06:53:58.937695', '2025-09-15 06:53:58.937695') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mRecipe Load (1.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = 10 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = 19 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Create (0.1ms)[0m  [1m[32mINSERT INTO "recipe_ingredients" ("ingr_qty", "recipe_id", "ingredient_id", "created_at", "updated_at") VALUES ('1 clove, minced', 10, 19, '2025-09-15 06:53:58.942326', '2025-09-15 06:53:58.942326') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = 10 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = 9 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Create (0.1ms)[0m  [1m[32mINSERT INTO "recipe_ingredients" ("ingr_qty", "recipe_id", "ingredient_id", "created_at", "updated_at") VALUES ('1 tspn', 10, 9, '2025-09-15 06:53:58.945515', '2025-09-15 06:53:58.945515') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = 10 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = 16 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Create (0.1ms)[0m  [1m[32mINSERT INTO "recipe_ingredients" ("ingr_qty", "recipe_id", "ingredient_id", "created_at", "updated_at") VALUES ('1 tspn', 10, 16, '2025-09-15 06:53:58.948477', '2025-09-15 06:53:58.948477') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = 10 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = 44 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Create (0.1ms)[0m  [1m[32mINSERT INTO "recipe_ingredients" ("ingr_qty", "recipe_id", "ingredient_id", "created_at", "updated_at") VALUES ('500g', 10, 44, '2025-09-15 06:53:58.952098', '2025-09-15 06:53:58.952098') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = 11 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = 26 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Create (1.5ms)[0m  [1m[32mINSERT INTO "recipe_ingredients" ("ingr_qty", "recipe_id", "ingredient_id", "created_at", "updated_at") VALUES ('1 packet', 11, 26, '2025-09-15 06:53:58.962018', '2025-09-15 06:53:58.962018') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = 11 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mIngredient Load (3.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = 2 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Create (0.1ms)[0m  [1m[32mINSERT INTO "recipe_ingredients" ("ingr_qty", "recipe_id", "ingredient_id", "created_at", "updated_at") VALUES ('50g', 11, 2, '2025-09-15 06:53:58.970320', '2025-09-15 06:53:58.970320') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mRecipe Load (0.9ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = 11 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = 25 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Create (0.1ms)[0m  [1m[32mINSERT INTO "recipe_ingredients" ("ingr_qty", "recipe_id", "ingredient_id", "created_at", "updated_at") VALUES ('500g', 11, 25, '2025-09-15 06:53:58.977297', '2025-09-15 06:53:58.977297') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mRecipe Load (0.7ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = 11 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = 27 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Create (0.2ms)[0m  [1m[32mINSERT INTO "recipe_ingredients" ("ingr_qty", "recipe_id", "ingredient_id", "created_at", "updated_at") VALUES ('1 large', 11, 27, '2025-09-15 06:53:58.982745', '2025-09-15 06:53:58.982745') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = 11 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = 28 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Create (0.1ms)[0m  [1m[32mINSERT INTO "recipe_ingredients" ("ingr_qty", "recipe_id", "ingredient_id", "created_at", "updated_at") VALUES ('200g', 11, 28, '2025-09-15 06:53:58.986897', '2025-09-15 06:53:58.986897') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = 11 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mIngredient Load (0.2ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = 6 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Create (0.1ms)[0m  [1m[32mINSERT INTO "recipe_ingredients" ("ingr_qty", "recipe_id", "ingredient_id", "created_at", "updated_at") VALUES ('50g', 11, 6, '2025-09-15 06:53:58.991346', '2025-09-15 06:53:58.991346') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mRecipe Load (0.7ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = 11 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = 29 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Create (0.1ms)[0m  [1m[32mINSERT INTO "recipe_ingredients" ("ingr_qty", "recipe_id", "ingredient_id", "created_at", "updated_at") VALUES ('250mL', 11, 29, '2025-09-15 06:53:58.995324', '2025-09-15 06:53:58.995324') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = 11 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = 30 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Create (0.1ms)[0m  [1m[32mINSERT INTO "recipe_ingredients" ("ingr_qty", "recipe_id", "ingredient_id", "created_at", "updated_at") VALUES ('1 carton', 11, 30, '2025-09-15 06:53:59.000087', '2025-09-15 06:53:59.000087') RETURNING "id" /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mUser Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."status" = 'Active' /*application='Recbox1'*/[0m
+  [1m[36mUser Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."status" = 'Suspended' /*application='Recbox1'*/[0m
+  [1m[36mUser Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."status" = 'Banned' /*application='Recbox1'*/[0m
+  [1m[36mUser Pluck (0.2ms)[0m  [1m[34mSELECT "users"."id" FROM "users" WHERE "users"."status" = 'Banned' /*application='Recbox1'*/[0m
+  [1m[36mUser Pluck (0.2ms)[0m  [1m[34mSELECT "users"."id" FROM "users" WHERE "users"."status" = 'Suspended' /*application='Recbox1'*/[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 5 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mUser Update (0.3ms)[0m  [1m[33mUPDATE "users" SET "status" = 'Active', "updated_at" = '2025-09-15 06:57:08.002947' WHERE "users"."id" = 5 /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 5 /* loading for pp */ LIMIT 11 /*application='Recbox1'*/[0m
+  [1m[36mUser Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."status" = 'Suspended' /*application='Recbox1'*/[0m
+  [1m[36mUser Update All (0.3ms)[0m  [1m[33mUPDATE "users" SET "status" = 'Active' WHERE "users"."status" = 'Suspended' /*application='Recbox1'*/[0m
+  [1m[36mUser Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."status" = 'Suspended' /*application='Recbox1'*/[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 11 /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mUser Update (0.4ms)[0m  [1m[33mUPDATE "users" SET "fname" = 'Ollie', "lname" = 'Baylor', "updated_at" = '2025-09-15 07:00:27.758086' WHERE "users"."id" = 11 /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mRecipe Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes" WHERE "recipes"."user_id" = 3 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipe_ingredients" WHERE "recipe_ingredients"."recipe_id" = 4 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipe_ingredients" WHERE "recipe_ingredients"."recipe_id" = 5 /*application='Recbox1'*/[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 3 /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."user_id" = 3 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."recipe_id" = 4 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Destroy (0.1ms)[0m  [1m[31mDELETE FROM "recipe_ingredients" WHERE "recipe_ingredients"."id" = 25 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Destroy (0.1ms)[0m  [1m[31mDELETE FROM "recipe_ingredients" WHERE "recipe_ingredients"."id" = 26 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Destroy (0.1ms)[0m  [1m[31mDELETE FROM "recipe_ingredients" WHERE "recipe_ingredients"."id" = 27 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Destroy (0.1ms)[0m  [1m[31mDELETE FROM "recipe_ingredients" WHERE "recipe_ingredients"."id" = 28 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Destroy (0.1ms)[0m  [1m[31mDELETE FROM "recipe_ingredients" WHERE "recipe_ingredients"."id" = 29 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Destroy (0.1ms)[0m  [1m[31mDELETE FROM "recipe_ingredients" WHERE "recipe_ingredients"."id" = 30 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Destroy (0.2ms)[0m  [1m[31mDELETE FROM "recipe_ingredients" WHERE "recipe_ingredients"."id" = 31 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Destroy (0.1ms)[0m  [1m[31mDELETE FROM "recipe_ingredients" WHERE "recipe_ingredients"."id" = 32 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Destroy (0.1ms)[0m  [1m[31mDELETE FROM "recipe_ingredients" WHERE "recipe_ingredients"."id" = 33 /*application='Recbox1'*/[0m
+  [1m[36mRecipe Destroy (0.1ms)[0m  [1m[31mDELETE FROM "recipes" WHERE "recipes"."id" = 4 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."recipe_id" = 5 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Destroy (0.1ms)[0m  [1m[31mDELETE FROM "recipe_ingredients" WHERE "recipe_ingredients"."id" = 34 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Destroy (0.1ms)[0m  [1m[31mDELETE FROM "recipe_ingredients" WHERE "recipe_ingredients"."id" = 35 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Destroy (0.1ms)[0m  [1m[31mDELETE FROM "recipe_ingredients" WHERE "recipe_ingredients"."id" = 36 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Destroy (0.1ms)[0m  [1m[31mDELETE FROM "recipe_ingredients" WHERE "recipe_ingredients"."id" = 37 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Destroy (0.0ms)[0m  [1m[31mDELETE FROM "recipe_ingredients" WHERE "recipe_ingredients"."id" = 38 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Destroy (0.1ms)[0m  [1m[31mDELETE FROM "recipe_ingredients" WHERE "recipe_ingredients"."id" = 39 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Destroy (0.0ms)[0m  [1m[31mDELETE FROM "recipe_ingredients" WHERE "recipe_ingredients"."id" = 40 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Destroy (0.1ms)[0m  [1m[31mDELETE FROM "recipe_ingredients" WHERE "recipe_ingredients"."id" = 41 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Destroy (0.1ms)[0m  [1m[31mDELETE FROM "recipe_ingredients" WHERE "recipe_ingredients"."id" = 42 /*application='Recbox1'*/[0m
+  [1m[36mRecipe Destroy (0.1ms)[0m  [1m[31mDELETE FROM "recipes" WHERE "recipes"."id" = 5 /*application='Recbox1'*/[0m
+  [1m[36mUser Destroy (0.1ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = 3 /*application='Recbox1'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Recbox1'*/[0m
+  [1m[36mRecipe Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes" WHERE "recipes"."user_id" = 3 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipe_ingredients" WHERE "recipe_ingredients"."recipe_id" = 5 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipe_ingredients" WHERE "recipe_ingredients"."recipe_id" = 4 /*application='Recbox1'*/[0m
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" /* loading for pp */ LIMIT 11 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.3ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."recipe_id" IN (1, 2, 3, 6, 7, 8, 9, 10, 11) /*application='Recbox1'*/[0m
+  [1m[36mIngredient Load (0.2ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" IN (1, 2, 3, 4, 5, 6, 8, 7, 9, 10, 11, 12, 13, 14, 26, 25, 27, 28, 29, 30, 31, 32, 33, 34, 39, 19, 35, 36, 15, 16, 23, 20, 38, 24, 40, 41, 18, 43, 44) /*application='Recbox1'*/[0m
+  [1m[36mRecipe Load (3.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.4ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."recipe_id" IN (1, 2, 3, 6, 7, 8, 9, 10, 11) /*application='Recbox1'*/[0m
+  [1m[36mIngredient Load (0.3ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" IN (1, 2, 3, 4, 5, 6, 8, 7, 9, 10, 11, 12, 13, 14, 26, 25, 27, 28, 29, 30, 31, 32, 33, 34, 39, 19, 35, 36, 15, 16, 23, 20, 38, 24, 40, 41, 18, 43, 44) /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.2ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 1 AND "recipe_ingredients"."recipe_id" = 1 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 2 AND "recipe_ingredients"."recipe_id" = 1 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 3 AND "recipe_ingredients"."recipe_id" = 1 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 4 AND "recipe_ingredients"."recipe_id" = 1 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 5 AND "recipe_ingredients"."recipe_id" = 1 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 6 AND "recipe_ingredients"."recipe_id" = 1 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 8 AND "recipe_ingredients"."recipe_id" = 1 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 7 AND "recipe_ingredients"."recipe_id" = 1 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 9 AND "recipe_ingredients"."recipe_id" = 1 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 10 AND "recipe_ingredients"."recipe_id" = 1 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 6 AND "recipe_ingredients"."recipe_id" = 2 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 3 AND "recipe_ingredients"."recipe_id" = 2 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 8 AND "recipe_ingredients"."recipe_id" = 2 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 7 AND "recipe_ingredients"."recipe_id" = 2 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 9 AND "recipe_ingredients"."recipe_id" = 2 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 11 AND "recipe_ingredients"."recipe_id" = 2 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 4 AND "recipe_ingredients"."recipe_id" = 2 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 2 AND "recipe_ingredients"."recipe_id" = 2 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 12 AND "recipe_ingredients"."recipe_id" = 2 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.2ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 13 AND "recipe_ingredients"."recipe_id" = 3 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.2ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 2 AND "recipe_ingredients"."recipe_id" = 3 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.2ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 6 AND "recipe_ingredients"."recipe_id" = 3 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 11 AND "recipe_ingredients"."recipe_id" = 3 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 14 AND "recipe_ingredients"."recipe_id" = 3 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 26 AND "recipe_ingredients"."recipe_id" = 6 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 2 AND "recipe_ingredients"."recipe_id" = 6 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 25 AND "recipe_ingredients"."recipe_id" = 6 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 27 AND "recipe_ingredients"."recipe_id" = 6 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 28 AND "recipe_ingredients"."recipe_id" = 6 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 6 AND "recipe_ingredients"."recipe_id" = 6 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 29 AND "recipe_ingredients"."recipe_id" = 6 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 30 AND "recipe_ingredients"."recipe_id" = 6 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 31 AND "recipe_ingredients"."recipe_id" = 7 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 32 AND "recipe_ingredients"."recipe_id" = 7 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 33 AND "recipe_ingredients"."recipe_id" = 7 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 34 AND "recipe_ingredients"."recipe_id" = 7 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 25 AND "recipe_ingredients"."recipe_id" = 7 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 39 AND "recipe_ingredients"."recipe_id" = 7 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 19 AND "recipe_ingredients"."recipe_id" = 7 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 35 AND "recipe_ingredients"."recipe_id" = 7 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 27 AND "recipe_ingredients"."recipe_id" = 7 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 36 AND "recipe_ingredients"."recipe_id" = 7 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 15 AND "recipe_ingredients"."recipe_id" = 8 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 9 AND "recipe_ingredients"."recipe_id" = 8 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 16 AND "recipe_ingredients"."recipe_id" = 8 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 4 AND "recipe_ingredients"."recipe_id" = 8 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.2ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 11 AND "recipe_ingredients"."recipe_id" = 8 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 23 AND "recipe_ingredients"."recipe_id" = 8 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.2ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 20 AND "recipe_ingredients"."recipe_id" = 8 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 38 AND "recipe_ingredients"."recipe_id" = 8 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 39 AND "recipe_ingredients"."recipe_id" = 8 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 24 AND "recipe_ingredients"."recipe_id" = 8 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 40 AND "recipe_ingredients"."recipe_id" = 8 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 2 AND "recipe_ingredients"."recipe_id" = 9 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 27 AND "recipe_ingredients"."recipe_id" = 9 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 19 AND "recipe_ingredients"."recipe_id" = 9 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 24 AND "recipe_ingredients"."recipe_id" = 9 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 41 AND "recipe_ingredients"."recipe_id" = 9 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 3 AND "recipe_ingredients"."recipe_id" = 9 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 1 AND "recipe_ingredients"."recipe_id" = 9 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 9 AND "recipe_ingredients"."recipe_id" = 9 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 18 AND "recipe_ingredients"."recipe_id" = 10 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 43 AND "recipe_ingredients"."recipe_id" = 10 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 19 AND "recipe_ingredients"."recipe_id" = 10 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 9 AND "recipe_ingredients"."recipe_id" = 10 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 16 AND "recipe_ingredients"."recipe_id" = 10 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 44 AND "recipe_ingredients"."recipe_id" = 10 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 26 AND "recipe_ingredients"."recipe_id" = 11 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 2 AND "recipe_ingredients"."recipe_id" = 11 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 25 AND "recipe_ingredients"."recipe_id" = 11 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.2ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 27 AND "recipe_ingredients"."recipe_id" = 11 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 28 AND "recipe_ingredients"."recipe_id" = 11 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 6 AND "recipe_ingredients"."recipe_id" = 11 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 29 AND "recipe_ingredients"."recipe_id" = 11 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 30 AND "recipe_ingredients"."recipe_id" = 11 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."user_id" = 5 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.5ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."recipe_id" IN (8, 9) /*application='Recbox1'*/[0m
+  [1m[36mIngredient Load (0.2ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" IN (15, 9, 16, 4, 11, 23, 20, 38, 39, 24, 40, 2, 27, 19, 41, 3, 1) /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 15 AND "recipe_ingredients"."recipe_id" = 8 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 9 AND "recipe_ingredients"."recipe_id" = 8 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 16 AND "recipe_ingredients"."recipe_id" = 8 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 4 AND "recipe_ingredients"."recipe_id" = 8 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 11 AND "recipe_ingredients"."recipe_id" = 8 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 23 AND "recipe_ingredients"."recipe_id" = 8 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 20 AND "recipe_ingredients"."recipe_id" = 8 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 38 AND "recipe_ingredients"."recipe_id" = 8 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.4ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 39 AND "recipe_ingredients"."recipe_id" = 8 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 24 AND "recipe_ingredients"."recipe_id" = 8 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 40 AND "recipe_ingredients"."recipe_id" = 8 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 2 AND "recipe_ingredients"."recipe_id" = 9 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 27 AND "recipe_ingredients"."recipe_id" = 9 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 19 AND "recipe_ingredients"."recipe_id" = 9 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 24 AND "recipe_ingredients"."recipe_id" = 9 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 41 AND "recipe_ingredients"."recipe_id" = 9 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 3 AND "recipe_ingredients"."recipe_id" = 9 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 1 AND "recipe_ingredients"."recipe_id" = 9 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 9 AND "recipe_ingredients"."recipe_id" = 9 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipe Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes" WHERE (title LIKE '%tomato%') /*application='Recbox1'*/[0m
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE (title LIKE '%tomato%') ORDER BY "recipes"."id" ASC LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."recipe_id" = 9 /*application='Recbox1'*/[0m
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" IN (2, 27, 19, 24, 41, 3, 1, 9) /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 2 AND "recipe_ingredients"."recipe_id" = 9 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 27 AND "recipe_ingredients"."recipe_id" = 9 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 19 AND "recipe_ingredients"."recipe_id" = 9 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 24 AND "recipe_ingredients"."recipe_id" = 9 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 41 AND "recipe_ingredients"."recipe_id" = 9 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 3 AND "recipe_ingredients"."recipe_id" = 9 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 1 AND "recipe_ingredients"."recipe_id" = 9 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 9 AND "recipe_ingredients"."recipe_id" = 9 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipe Count (0.3ms)[0m  [1m[34mSELECT COUNT(DISTINCT "recipes"."id") FROM "recipes" INNER JOIN "recipe_ingredients" ON "recipe_ingredients"."recipe_id" = "recipes"."id" INNER JOIN "recipe_ingredients" "recipe_ingredients_recipes_join" ON "recipe_ingredients_recipes_join"."recipe_id" = "recipes"."id" INNER JOIN "ingredients" ON "ingredients"."id" = "recipe_ingredients_recipes_join"."ingredient_id" WHERE "recipes"."id" IN (SELECT "recipes"."id" FROM "recipes" INNER JOIN "recipe_ingredients" ON "recipe_ingredients"."recipe_id" = "recipes"."id" INNER JOIN "recipe_ingredients" "recipe_ingredients_recipes_join" ON "recipe_ingredients_recipes_join"."recipe_id" = "recipes"."id" INNER JOIN "ingredients" ON "ingredients"."id" = "recipe_ingredients_recipes_join"."ingredient_id" WHERE (ingredients.ingr_name LIKE '%onion%')) /*application='Recbox1'*/[0m
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT DISTINCT "recipes".* FROM "recipes" INNER JOIN "recipe_ingredients" ON "recipe_ingredients"."recipe_id" = "recipes"."id" INNER JOIN "recipe_ingredients" "recipe_ingredients_recipes_join" ON "recipe_ingredients_recipes_join"."recipe_id" = "recipes"."id" INNER JOIN "ingredients" ON "ingredients"."id" = "recipe_ingredients_recipes_join"."ingredient_id" WHERE "recipes"."id" IN (SELECT "recipes"."id" FROM "recipes" INNER JOIN "recipe_ingredients" ON "recipe_ingredients"."recipe_id" = "recipes"."id" INNER JOIN "recipe_ingredients" "recipe_ingredients_recipes_join" ON "recipe_ingredients_recipes_join"."recipe_id" = "recipes"."id" INNER JOIN "ingredients" ON "ingredients"."id" = "recipe_ingredients_recipes_join"."ingredient_id" WHERE (ingredients.ingr_name LIKE '%onion%')) /*application='Recbox1'*/[0m
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" INNER JOIN "recipe_ingredients" ON "ingredients"."id" = "recipe_ingredients"."ingredient_id" WHERE "recipe_ingredients"."recipe_id" = 6 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 26 AND "recipe_ingredients"."recipe_id" = 6 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 2 AND "recipe_ingredients"."recipe_id" = 6 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 25 AND "recipe_ingredients"."recipe_id" = 6 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 27 AND "recipe_ingredients"."recipe_id" = 6 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 28 AND "recipe_ingredients"."recipe_id" = 6 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 6 AND "recipe_ingredients"."recipe_id" = 6 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 29 AND "recipe_ingredients"."recipe_id" = 6 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 30 AND "recipe_ingredients"."recipe_id" = 6 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" INNER JOIN "recipe_ingredients" ON "ingredients"."id" = "recipe_ingredients"."ingredient_id" WHERE "recipe_ingredients"."recipe_id" = 7 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 31 AND "recipe_ingredients"."recipe_id" = 7 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 32 AND "recipe_ingredients"."recipe_id" = 7 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 33 AND "recipe_ingredients"."recipe_id" = 7 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 34 AND "recipe_ingredients"."recipe_id" = 7 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 25 AND "recipe_ingredients"."recipe_id" = 7 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 39 AND "recipe_ingredients"."recipe_id" = 7 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 19 AND "recipe_ingredients"."recipe_id" = 7 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 35 AND "recipe_ingredients"."recipe_id" = 7 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 27 AND "recipe_ingredients"."recipe_id" = 7 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 36 AND "recipe_ingredients"."recipe_id" = 7 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mIngredient Load (0.2ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" INNER JOIN "recipe_ingredients" ON "ingredients"."id" = "recipe_ingredients"."ingredient_id" WHERE "recipe_ingredients"."recipe_id" = 9 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 2 AND "recipe_ingredients"."recipe_id" = 9 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 27 AND "recipe_ingredients"."recipe_id" = 9 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 19 AND "recipe_ingredients"."recipe_id" = 9 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 24 AND "recipe_ingredients"."recipe_id" = 9 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 41 AND "recipe_ingredients"."recipe_id" = 9 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 3 AND "recipe_ingredients"."recipe_id" = 9 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 1 AND "recipe_ingredients"."recipe_id" = 9 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 9 AND "recipe_ingredients"."recipe_id" = 9 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" INNER JOIN "recipe_ingredients" ON "ingredients"."id" = "recipe_ingredients"."ingredient_id" WHERE "recipe_ingredients"."recipe_id" = 11 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 26 AND "recipe_ingredients"."recipe_id" = 11 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 2 AND "recipe_ingredients"."recipe_id" = 11 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 25 AND "recipe_ingredients"."recipe_id" = 11 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 27 AND "recipe_ingredients"."recipe_id" = 11 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 28 AND "recipe_ingredients"."recipe_id" = 11 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 6 AND "recipe_ingredients"."recipe_id" = 11 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 29 AND "recipe_ingredients"."recipe_id" = 11 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 30 AND "recipe_ingredients"."recipe_id" = 11 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipe Count (0.3ms)[0m  [1m[34mSELECT COUNT(DISTINCT "recipes"."id") FROM "recipes" INNER JOIN "recipe_ingredients" ON "recipe_ingredients"."recipe_id" = "recipes"."id" INNER JOIN "recipe_ingredients" "recipe_ingredients_recipes_join" ON "recipe_ingredients_recipes_join"."recipe_id" = "recipes"."id" INNER JOIN "ingredients" ON "ingredients"."id" = "recipe_ingredients_recipes_join"."ingredient_id" WHERE "recipes"."id" NOT IN (SELECT "recipes"."id" FROM "recipes" INNER JOIN "recipe_ingredients" ON "recipe_ingredients"."recipe_id" = "recipes"."id" INNER JOIN "recipe_ingredients" "recipe_ingredients_recipes_join" ON "recipe_ingredients_recipes_join"."recipe_id" = "recipes"."id" INNER JOIN "ingredients" ON "ingredients"."id" = "recipe_ingredients_recipes_join"."ingredient_id" WHERE (ingredients.ingr_name LIKE '%onion%')) /*application='Recbox1'*/[0m
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT DISTINCT "recipes".* FROM "recipes" INNER JOIN "recipe_ingredients" ON "recipe_ingredients"."recipe_id" = "recipes"."id" INNER JOIN "recipe_ingredients" "recipe_ingredients_recipes_join" ON "recipe_ingredients_recipes_join"."recipe_id" = "recipes"."id" INNER JOIN "ingredients" ON "ingredients"."id" = "recipe_ingredients_recipes_join"."ingredient_id" WHERE "recipes"."id" NOT IN (SELECT "recipes"."id" FROM "recipes" INNER JOIN "recipe_ingredients" ON "recipe_ingredients"."recipe_id" = "recipes"."id" INNER JOIN "recipe_ingredients" "recipe_ingredients_recipes_join" ON "recipe_ingredients_recipes_join"."recipe_id" = "recipes"."id" INNER JOIN "ingredients" ON "ingredients"."id" = "recipe_ingredients_recipes_join"."ingredient_id" WHERE (ingredients.ingr_name LIKE '%onion%')) /*application='Recbox1'*/[0m
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" INNER JOIN "recipe_ingredients" ON "ingredients"."id" = "recipe_ingredients"."ingredient_id" WHERE "recipe_ingredients"."recipe_id" = 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 1 AND "recipe_ingredients"."recipe_id" = 1 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 2 AND "recipe_ingredients"."recipe_id" = 1 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 3 AND "recipe_ingredients"."recipe_id" = 1 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 4 AND "recipe_ingredients"."recipe_id" = 1 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 5 AND "recipe_ingredients"."recipe_id" = 1 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 6 AND "recipe_ingredients"."recipe_id" = 1 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 8 AND "recipe_ingredients"."recipe_id" = 1 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 7 AND "recipe_ingredients"."recipe_id" = 1 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 9 AND "recipe_ingredients"."recipe_id" = 1 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 10 AND "recipe_ingredients"."recipe_id" = 1 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" INNER JOIN "recipe_ingredients" ON "ingredients"."id" = "recipe_ingredients"."ingredient_id" WHERE "recipe_ingredients"."recipe_id" = 2 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 6 AND "recipe_ingredients"."recipe_id" = 2 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 3 AND "recipe_ingredients"."recipe_id" = 2 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 8 AND "recipe_ingredients"."recipe_id" = 2 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 7 AND "recipe_ingredients"."recipe_id" = 2 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 9 AND "recipe_ingredients"."recipe_id" = 2 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 11 AND "recipe_ingredients"."recipe_id" = 2 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 4 AND "recipe_ingredients"."recipe_id" = 2 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 2 AND "recipe_ingredients"."recipe_id" = 2 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 12 AND "recipe_ingredients"."recipe_id" = 2 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" INNER JOIN "recipe_ingredients" ON "ingredients"."id" = "recipe_ingredients"."ingredient_id" WHERE "recipe_ingredients"."recipe_id" = 3 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 13 AND "recipe_ingredients"."recipe_id" = 3 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 2 AND "recipe_ingredients"."recipe_id" = 3 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 6 AND "recipe_ingredients"."recipe_id" = 3 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 11 AND "recipe_ingredients"."recipe_id" = 3 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 14 AND "recipe_ingredients"."recipe_id" = 3 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" INNER JOIN "recipe_ingredients" ON "ingredients"."id" = "recipe_ingredients"."ingredient_id" WHERE "recipe_ingredients"."recipe_id" = 8 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 15 AND "recipe_ingredients"."recipe_id" = 8 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 9 AND "recipe_ingredients"."recipe_id" = 8 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 16 AND "recipe_ingredients"."recipe_id" = 8 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 4 AND "recipe_ingredients"."recipe_id" = 8 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 11 AND "recipe_ingredients"."recipe_id" = 8 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 23 AND "recipe_ingredients"."recipe_id" = 8 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 20 AND "recipe_ingredients"."recipe_id" = 8 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 38 AND "recipe_ingredients"."recipe_id" = 8 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 39 AND "recipe_ingredients"."recipe_id" = 8 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 24 AND "recipe_ingredients"."recipe_id" = 8 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 40 AND "recipe_ingredients"."recipe_id" = 8 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" INNER JOIN "recipe_ingredients" ON "ingredients"."id" = "recipe_ingredients"."ingredient_id" WHERE "recipe_ingredients"."recipe_id" = 10 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 18 AND "recipe_ingredients"."recipe_id" = 10 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 43 AND "recipe_ingredients"."recipe_id" = 10 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 19 AND "recipe_ingredients"."recipe_id" = 10 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 9 AND "recipe_ingredients"."recipe_id" = 10 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 16 AND "recipe_ingredients"."recipe_id" = 10 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 44 AND "recipe_ingredients"."recipe_id" = 10 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipe Count (1.1ms)[0m  [1m[34mSELECT COUNT(DISTINCT "recipes"."id") FROM "recipes" INNER JOIN "recipe_ingredients" ON "recipe_ingredients"."recipe_id" = "recipes"."id" INNER JOIN "recipe_ingredients" "recipe_ingredients_recipes_join" ON "recipe_ingredients_recipes_join"."recipe_id" = "recipes"."id" INNER JOIN "ingredients" ON "ingredients"."id" = "recipe_ingredients_recipes_join"."ingredient_id" WHERE "recipes"."id" NOT IN (SELECT "recipes"."id" FROM "recipes" INNER JOIN "recipe_ingredients" ON "recipe_ingredients"."recipe_id" = "recipes"."id" INNER JOIN "recipe_ingredients" "recipe_ingredients_recipes_join" ON "recipe_ingredients_recipes_join"."recipe_id" = "recipes"."id" INNER JOIN "ingredients" ON "ingredients"."id" = "recipe_ingredients_recipes_join"."ingredient_id" WHERE (ingredients.ingr_name LIKE '%onion%')) /*application='Recbox1'*/[0m
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT DISTINCT "recipes".* FROM "recipes" INNER JOIN "recipe_ingredients" ON "recipe_ingredients"."recipe_id" = "recipes"."id" INNER JOIN "recipe_ingredients" "recipe_ingredients_recipes_join" ON "recipe_ingredients_recipes_join"."recipe_id" = "recipes"."id" INNER JOIN "ingredients" ON "ingredients"."id" = "recipe_ingredients_recipes_join"."ingredient_id" WHERE "recipes"."id" NOT IN (SELECT "recipes"."id" FROM "recipes" INNER JOIN "recipe_ingredients" ON "recipe_ingredients"."recipe_id" = "recipes"."id" INNER JOIN "recipe_ingredients" "recipe_ingredients_recipes_join" ON "recipe_ingredients_recipes_join"."recipe_id" = "recipes"."id" INNER JOIN "ingredients" ON "ingredients"."id" = "recipe_ingredients_recipes_join"."ingredient_id" WHERE (ingredients.ingr_name LIKE '%onion%')) /*application='Recbox1'*/[0m
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" INNER JOIN "recipe_ingredients" ON "ingredients"."id" = "recipe_ingredients"."ingredient_id" WHERE "recipe_ingredients"."recipe_id" = 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 1 AND "recipe_ingredients"."recipe_id" = 1 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 2 AND "recipe_ingredients"."recipe_id" = 1 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 3 AND "recipe_ingredients"."recipe_id" = 1 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 4 AND "recipe_ingredients"."recipe_id" = 1 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 5 AND "recipe_ingredients"."recipe_id" = 1 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 6 AND "recipe_ingredients"."recipe_id" = 1 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 8 AND "recipe_ingredients"."recipe_id" = 1 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 7 AND "recipe_ingredients"."recipe_id" = 1 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 9 AND "recipe_ingredients"."recipe_id" = 1 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 10 AND "recipe_ingredients"."recipe_id" = 1 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" INNER JOIN "recipe_ingredients" ON "ingredients"."id" = "recipe_ingredients"."ingredient_id" WHERE "recipe_ingredients"."recipe_id" = 2 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 6 AND "recipe_ingredients"."recipe_id" = 2 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 3 AND "recipe_ingredients"."recipe_id" = 2 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 8 AND "recipe_ingredients"."recipe_id" = 2 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 7 AND "recipe_ingredients"."recipe_id" = 2 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 9 AND "recipe_ingredients"."recipe_id" = 2 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 11 AND "recipe_ingredients"."recipe_id" = 2 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 4 AND "recipe_ingredients"."recipe_id" = 2 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 2 AND "recipe_ingredients"."recipe_id" = 2 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 12 AND "recipe_ingredients"."recipe_id" = 2 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" INNER JOIN "recipe_ingredients" ON "ingredients"."id" = "recipe_ingredients"."ingredient_id" WHERE "recipe_ingredients"."recipe_id" = 3 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 13 AND "recipe_ingredients"."recipe_id" = 3 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 2 AND "recipe_ingredients"."recipe_id" = 3 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 6 AND "recipe_ingredients"."recipe_id" = 3 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 11 AND "recipe_ingredients"."recipe_id" = 3 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 14 AND "recipe_ingredients"."recipe_id" = 3 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" INNER JOIN "recipe_ingredients" ON "ingredients"."id" = "recipe_ingredients"."ingredient_id" WHERE "recipe_ingredients"."recipe_id" = 8 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 15 AND "recipe_ingredients"."recipe_id" = 8 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 9 AND "recipe_ingredients"."recipe_id" = 8 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 16 AND "recipe_ingredients"."recipe_id" = 8 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 4 AND "recipe_ingredients"."recipe_id" = 8 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 11 AND "recipe_ingredients"."recipe_id" = 8 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 23 AND "recipe_ingredients"."recipe_id" = 8 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 20 AND "recipe_ingredients"."recipe_id" = 8 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 38 AND "recipe_ingredients"."recipe_id" = 8 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 39 AND "recipe_ingredients"."recipe_id" = 8 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 24 AND "recipe_ingredients"."recipe_id" = 8 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 40 AND "recipe_ingredients"."recipe_id" = 8 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" INNER JOIN "recipe_ingredients" ON "ingredients"."id" = "recipe_ingredients"."ingredient_id" WHERE "recipe_ingredients"."recipe_id" = 10 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 18 AND "recipe_ingredients"."recipe_id" = 10 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 43 AND "recipe_ingredients"."recipe_id" = 10 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 19 AND "recipe_ingredients"."recipe_id" = 10 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 9 AND "recipe_ingredients"."recipe_id" = 10 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 16 AND "recipe_ingredients"."recipe_id" = 10 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = 44 AND "recipe_ingredients"."recipe_id" = 10 LIMIT 1 /*application='Recbox1'*/[0m
+  [1m[36mRecipe Count (0.4ms)[0m  [1m[34mSELECT COUNT(DISTINCT "recipes"."id") FROM "recipes" INNER JOIN "recipe_ingredients" ON "recipe_ingredients"."recipe_id" = "recipes"."id" INNER JOIN "recipe_ingredients" "recipe_ingredients_recipes_join" ON "recipe_ingredients_recipes_join"."recipe_id" = "recipes"."id" INNER JOIN "ingredients" ON "ingredients"."id" = "recipe_ingredients_recipes_join"."ingredient_id" WHERE "recipes"."id" IN (SELECT "recipes"."id" FROM "recipes" INNER JOIN "recipe_ingredients" ON "recipe_ingredients"."recipe_id" = "recipes"."id" INNER JOIN "recipe_ingredients" "recipe_ingredients_recipes_join" ON "recipe_ingredients_recipes_join"."recipe_id" = "recipes"."id" INNER JOIN "ingredients" ON "ingredients"."id" = "recipe_ingredients_recipes_join"."ingredient_id" WHERE (ingredients.ingr_name LIKE '%grapefruit%')) /*application='Recbox1'*/[0m
+  [1m[36mRecipe Count (0.3ms)[0m  [1m[34mSELECT COUNT(DISTINCT "recipes"."id") FROM "recipes" INNER JOIN "recipe_ingredients" ON "recipe_ingredients"."recipe_id" = "recipes"."id" INNER JOIN "recipe_ingredients" "recipe_ingredients_recipes_join" ON "recipe_ingredients_recipes_join"."recipe_id" = "recipes"."id" INNER JOIN "ingredients" ON "ingredients"."id" = "recipe_ingredients_recipes_join"."ingredient_id" WHERE "recipes"."id" IN (SELECT "recipes"."id" FROM "recipes" INNER JOIN "recipe_ingredients" ON "recipe_ingredients"."recipe_id" = "recipes"."id" INNER JOIN "recipe_ingredients" "recipe_ingredients_recipes_join" ON "recipe_ingredients_recipes_join"."recipe_id" = "recipes"."id" INNER JOIN "ingredients" ON "ingredients"."id" = "recipe_ingredients_recipes_join"."ingredient_id" WHERE (ingredients.ingr_name LIKE '%grapefruit%')) /*application='Recbox1'*/[0m
