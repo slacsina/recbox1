@@ -1,2 +1,12 @@
 <h1>Welcome to RecipeBox</h1>
 <p>If you have the ingredients, we have the recipes!</p>
+<h3>Recently Added Recipes</h3>
+<hr />
+<% @recipes.each do |recipe| %>
+<div class="card bg-body-tertiary" style="margin-bottom:10px">
+<div class="card-body">
+<h4 class="card-title"><%= recipe.title %></h4>
+<p class="card-text"><%= recipe.description %><br />[<a href="/recipes/<%= recipe.id %>">Read full recipe</a>]</p>
+</div>
+</div>
+<% end %>
