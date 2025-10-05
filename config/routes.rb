@@ -1,5 +1,13 @@
 Rails.application.routes.draw do
   #get "search/index"
+  get '/admin', to: 'home#aindex'
+  get '/userhome', to: 'home#uindex'
+  get '/your-recipes', to: 'home#urecipes'
+
+  get 'login', to: 'sessions#new'
+  post 'login', to: 'sessions#create'
+  delete 'logout', to: 'sessions#destroy'
+
   get 'search', to: 'search#index'
   resources :recipe_ingredients
   resources :ingredients
